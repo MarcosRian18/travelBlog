@@ -1,29 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Blog</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        rel="stylesheet"
+    />
 </head>
 <body>
     <div class="header">
-        <a href="#"><img class="logo" src="./imgs/Logo rian.png" alt=""></a>
+        <a href="#"><img class="logo" src="./imgs/Logo rian.png" alt="Logo" /></a>
         <nav class="navbar">
-                <a href="#">INICIO</a>
-                <p>|</p>
-                <a href="#">DESTAQUES</a>
-                <p>|</p>
-                <a href="#">VIAGENS</a>
-        </nav>   
+            <a class="link" href="#">INICIO</a>
+            <p>|</p>
+            <a class="link" href="#">DESTAQUES</a>
+            <p>|</p>
+            <a class="link" href="#">VIAGENS</a>
+        </nav>
         <button class="login">LOGIN</button>
     </div>
 
     <div class="container">
-        <img src="./imgs/tela1.jpg" alt="">
+        <img src="./imgs/tela1.jpg" alt="Background Image" />
+        <div class="overlay">
+            <p class="quote">
+                "Não se prive de viver uma vida com <br />
+                tantos lugares mágicos para conhecer"
+            </p>
+            <hr class="red-line" />
+            <p class="subtext">
+                Entre aqui e conheça os melhores lugares para uma boa diversão
+            </p>
+            <button class="travel-button">Viaje Comigo</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="titleContent">
+            <h1>Posts Destacados</h1>
+            <div class="redLineContent"></div>
+        </div>
+        <p>Aqui você irá encontrar os relatos mais legais e divertidos</p>
+
+        <div class="destaques">
+            <div class="column">
+                <a href="#" class="item item1">
+                    <h1>MACHU <br /> PICCHU</h1>
+                    <p>Por: Leonardo Rebouças de Carvalho</p>
+                </a>
+                <a href="#" class="item item2">
+                    <h1>PAGODE <br /> SHWEDAGON</h1>
+                    <p>Por: Leonardo Rebouças de Carvalho</p>
+                </a>
+                <a href="#" class="item item3">
+                    <h1>FUSHIMI <br /> INARI</h1>
+                    <p>Por: Leonardo Rebouças de Carvalho</p>
+                </a>
+            </div>
+            <div class="column">
+                <a href="#" class="item item4">
+                    <h1>BASILICA <br /> NOTRE-DAME</h1>
+                    <p>Por: Leonardo Rebouças de Carvalho</p>
+                </a>
+                <a href="#" class="item item5">
+                    <h1>MATCHU <br /> PICCHU</h1>
+                    <p>Por: Leonardo Rebouças de Carvalho</p>
+                </a>
+                <a href="#" class="item item6">
+                    <h1>EL ATENEO <br /> GRAND SPLENDID</h1>
+                    <p>Por: Leonardo Rebouças de Carvalho</p>
+                </a>
+            </div>
+            <div class="column">
+                <a href="#" class="item item7">
+                    <h1>SIDNEY <br /> OPERA HOUSE</h1>
+                    <p>Por: Leonardo Rebouças de Carvalho</p>
+                </a>
+                <a href="#" class="item item8">
+                    <h1>BURJ <br /> KHALIFA</h1>
+                    <p>Por: Leonardo Rebouças de Carvalho</p>
+                </a>
+                <a href="#" class="item item9">
+                    <h1>GRANDE <br /> MURALHA</h1>
+                    <p>Por: Leonardo Rebouças de Carvalho</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="content-container">
+            <div class="posts">
+                <h2>Post</h2>
+                <div class="line"></div>
+                <div class="post">
+                    <a class="post-img" href="#"><img src="./imgs/Basilica.jpg" alt="Post Image 1" /></a>
+                    <div class="post-content">
+                        <div class="post-title">Lorem ipsum dolor sit amet 1</div>
+                        <div class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ut sunt eligendi quibusdam, sint nisi ex iure nulla, impedit vitae atque necessitatibus earum. Fugit aspernatur repudiandae blanditiis facilis perferendis ullam. 1.</div>
+                    </div>
+                </div>
+                <div class="grayline"></div>
+                <div class="post">
+                    <a class="post-img" href="#"><img src="./imgs/elateno.jpg" alt="Post Image 2" /></a>
+                    <div class="post-content">
+                        <div class="post-title">Lorem ipsum dolor sit amet 2</div>
+                        <div class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ut sunt eligendi quibusdam, sint nisi ex iure nulla, impedit vitae atque necessitatibus earum. Fugit aspernatur repudiandae blanditiis facilis perferendis ullam. 2.</div>
+                    </div>
+                </div>
+                <div class="grayline"></div>
+                <div class="post">
+                    <a class="post-img" href="#"><img src="./imgs/machu.jpg" alt="Post Image 3" /></a>
+                    <div class="post-content">
+                        <div class="post-title">Lorem ipsum dolor sit amet 3</div>
+                        <div class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ut sunt eligendi quibusdam, sint nisi ex iure nulla, impedit vitae atque necessitatibus earum. Fugit aspernatur repudiandae blanditiis facilis perferendis ullam. 3.</div>
+                    </div>
+                </div>
+                <div class="grayline"></div>
+            </div>
+            <div class="teste">
+                <div class="profile-img">
+                    <img src="./imgs/profile.jpg" alt="Profile Image" />
+                </div>
+                <div class="description">
+                    <p>Olá! Sou um viajante ávido, explorando o mundo um lugar de cada vez. Siga minhas aventuras e descubra destinos incríveis!</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="./imgs/facebook.png" alt="Facebook" /></a>
+                    <a href="#"><img src="./imgs/twitter.png" alt="Twitter" /></a>
+                    <a href="#"><img src="./imgs/instagram.png" alt="Instagram" /></a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
