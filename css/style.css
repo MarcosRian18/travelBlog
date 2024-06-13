@@ -367,16 +367,21 @@ h2 {
 .social-icons {
     justify-content: center;
     display: flex;
-    gap: 20px; 
+    gap: 60px; 
+    margin-top: 20px;
+    
 }
 
 .social-icons a img {
-    width: 30px;
-    height: 30px;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
 }
 
 .description h2 ,p{
     text-align: left;
+    letter-spacing: 2px;
     color: white;
 }
 .lineFooter {
