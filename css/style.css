@@ -153,6 +153,10 @@
     height: 2300px;
 }
 
+.content p {
+    text-align: center;
+}
+
 .titleContent, p {
     text-align: center;
     margin-top: 25px;
@@ -325,45 +329,59 @@ h2 {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    gap: 20px; /* Adicionado gap entre as colunas */
+    gap: 20px; 
 }
 
 .posts, .teste {
     flex: 1;
-    /* Ajustado para flexível, para melhor responsividade */
+   
 }
 
 .teste {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #f4f4f4;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .profile-img img {
-    width: 150px;
-    height: 150px;
+    position: relative;
+    top: 25%;
+    left: 40%;
+    justify-content: cente;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid #ccc;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .description {
     text-align: center;
     margin-bottom: 20px;
     font-size: 18px;
-    color: #333;
+    color: #dbdbdb;
 }
 
 .social-icons {
+    justify-content: center;
     display: flex;
-    gap: 10px; /* Adicionado espaçamento entre os ícones */
+    gap: 20px; 
 }
 
 .social-icons a img {
     width: 30px;
     height: 30px;
+}
+
+.description h2 ,p{
+    text-align: left;
+    color: white;
+}
+.lineFooter {
+    width: 25%;
+    height: 2px;
+    background-color: #ff0000;
+    margin: 5px 0;
 }
