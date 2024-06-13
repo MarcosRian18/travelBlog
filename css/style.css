@@ -41,6 +41,10 @@
     position: relative;
 }
 
+.navbar a:hover {
+    color: white;
+}
+
 .navbar a::after {
     content: "";
     position: absolute;
@@ -78,7 +82,9 @@
     cursor: pointer;
 }
 
-
+.login:hover {
+    color: white;
+}
 
 
 .container {
