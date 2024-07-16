@@ -19,11 +19,10 @@
     background-color: #8b8580;
     width: 100%;
     height: 100px;
-    position: fixed; 
+    position: fixed;
     top: 0;
     z-index: 1000;
 }
-
 
 .navbar {
     display: flex;
@@ -49,18 +48,16 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: -2px; 
-    width: 0; 
+    bottom: -2px;
+    width: 0;
     height: 2px;
-    background-color: #fbff00; 
-    transition: width 0.3s ease; 
+    background-color: #fbff00;
+    transition: width 0.3s ease;
 }
 
 .navbar a:hover::after {
-    width: 100%; 
+    width: 100%;
 }
-
-
 
 .navbar p {
     font-size: 18px;
@@ -86,6 +83,135 @@
     color: white;
 }
 
+.mobile-menu-button {
+    display: none;
+    cursor: pointer;
+    font-size: 36px;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(66, 1, 1, 0.932);
+    z-index: 1001;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mobile-menu .nav-links-mobile {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu .nav-links-mobile li {
+    margin: 20px 0;
+}
+
+.mobile-menu .nav-links-mobile a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.mobile-menu .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 86px;
+    cursor: pointer;
+}
+
+.material-symbols-outlined{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .login{
+        display: none;
+    }
+
+    .logo{
+        width: 70px;
+        height: 70px;
+    }
+
+    .container .quote {
+        width: 600px;
+        font-size: 1.2rem;
+    }
+
+    .container .overlay .subtext {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .travel-button {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+
+    .destaques {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content p{
+        text-align: center;
+    }
+
+    .column {
+        width: 100%;
+        max-width: none; /* Remova a restrição de largura máxima */
+    }
+
+    .item {
+        margin-top: 20px;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .post {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .post-img img {
+        max-width: 100%;
+    }
+
+    .post-content {
+        margin-left: 0;
+    }
+
+    .description p{
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .post img{
+       
+    }
+    
+    
+}
 
 .container {
     position: fixed;
@@ -101,6 +227,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -116,12 +243,16 @@
     font-family: "Inter", sans-serif;
     font-weight: bold;
     font-style: italic;
+    padding: 0 20px; /* Para garantir que o texto não encoste nas bordas em telas menores */
 }
 
 .quote {
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 10px;
+    max-width: 80%;
+    margin: 0 auto 10px auto;
+    text-align: center;
 }
 
 .red-line {
@@ -131,10 +262,10 @@
     border-radius: 20px;
 }
 
-
 .subtext {
     font-size: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .travel-button {
@@ -156,11 +287,6 @@
     margin-top: 100vh;
     z-index: 1;
     position: relative;
-    height: 2300px;
-}
-
-.content p {
-    text-align: center;
 }
 
 .titleContent, p {
@@ -180,9 +306,8 @@
 
 .destaques {
     display: flex;
-    padding: 20px;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -191,12 +316,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px;
+    flex: 1;
+    margin: 10px;
+    max-width: 500px; /* Ajuste o valor conforme necessário */
 }
 
 .item {
     position: relative;
     height: 300px;
+    width: 100%; /* Certifique-se de que o item ocupe toda a largura do contêiner */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,7 +338,7 @@
     color: white;
     background-size: cover;
     background-position: center;
-    transition: transform .2s; 
+    transition: transform 0.2s;
 }
 
 .item::after {
@@ -353,8 +481,8 @@ h2 {
 
 .profile-img img {
     position: relative;
-    top: 25%;
-    left: 40%;
+    top: 30%;
+    left: 10%;
     justify-content: cente;
     width: 250px;
     height: 250px;
